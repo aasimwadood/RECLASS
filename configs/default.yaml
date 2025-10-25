@@ -1,0 +1,22 @@
+train:
+  epochs: 60
+  batch_size: 8
+  lr: 3e-4
+  betas: [0.5, 0.999]
+  clip_len: 32
+  image_h: 256
+  image_w: 448
+  ema_beta: 0.9
+  fusion_alpha: 0.85
+
+preprocessing:
+  flow_window: 10
+  tvl1_lambda: 0.15
+  tvl1_theta: 0.3
+  flow_clip: 20
+
+dataset:
+  root: /path/to/your/SAVD
+  train_list: train.txt
+  val_list: val.txt
+  test_list: test.txt
